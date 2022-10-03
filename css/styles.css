@@ -13,7 +13,7 @@ canvas {
   /* ---- particles.js container ---- */
   
 #particles-js {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     /* background-color: #FAFFFD; */
@@ -176,6 +176,9 @@ hr{
 .row.bottom_row .col{
     margin-right: 40px;
 }
+.contact_me{
+    text-align: right;
+}
 @media (min-width: 1400px){
     .container{
         max-width: 1320px;
@@ -190,11 +193,13 @@ hr{
     .container{
         max-width: 960px;
     }
+   
 }
 @media (min-width: 768px) and (max-width: 991px){
     .container{
         max-width: 720px;
     }
+    
 }
 @media (min-width: 576px) and (max-width: 767px){
     .container{
@@ -204,5 +209,54 @@ hr{
 @media (max-width: 575px){
     .container{
         max-width: 100%;
+    }
+    .card h1{
+        font-size: 32px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 24px;
+    }
+}
+@media (max-width: 992px) {
+    .row.top{
+        flex-direction: column-reverse;
+    }
+    .card img{
+        margin-right: auto;
+        max-width: 150px;
+    }
+    .row.row2{
+        flex-direction: column-reverse;
+    }
+    .contact_me{
+        text-align: center;
+    }
+    .buttons{
+        min-width: unset;
+        max-width: 210px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about_me_list li{
+        font-size: 14px;
+    }
+    .row.row2 h2{
+        text-align: center;
+    }
+    .row.bottom_row{
+        flex-direction: column;
+    }
+    .contact_links{
+        justify-content: center;
+    }
+    .row.bottom_row h3{
+        text-align: center;
+    }
+    .row.bottom_row .col{
+        margin-right: 0;
     }
 }
