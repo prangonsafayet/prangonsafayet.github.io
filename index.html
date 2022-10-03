@@ -3,16 +3,193 @@
 <meta charset="UTF-8">
 <title>Safayet's Portfolio</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
+<!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
+
 <body>
+    <!-- color pallette: https://coolors.co/3c91e6-9fd356-342e37-fafffd-fa824c -->
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="row top">
+                    <h1><span>Safayet</span> Bin Azam</h1>
+                    <img src="./assets/user.jpg" alt="Safayet"/>
+                </div>
+                <h2>About <span>Me</span></h2>
+                <div class="row row2">
+                    <div class="col">
+                        <ul class="about_me_list">
+                            <li id="bangladesh">Bangladeshi</li>
+                            <li id="germany">Living in Germany</li>
+                            <li id="study">Studying Masters in IT at Germany</li>
+                            <li id="work">Worked with renowned European brands(Nescafe, RTL, Pro7, Aldi) for Creative development</li>
+                            <li id="gsap">Master in GSAP animations</li>
+                            <li id="js">Frontend expertise with JS libraries like ReactJS, GatsbyJS</li>
+                            <li id="backend">Can dabble with backend tech such as NodeJS, PHP</li>
+                            <li id="database">Knowledge of Databases such as MongoDB, MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 style="text-align: right;">Contact me</h3>
+                        <a href="mailto:prangonsafayet@gmail.com" class="mail_link">
+                            <div class="buttons mail">
+                                <img src="./assets/mail.png" alt="mail"/>
+                                <p>prangonsafayet@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row bottom_row">
+                    <div class="col">
+                        <h3>Link to my projects</h2>
+                            <div class="row contact_links">
+                                <a href="https://github.com/prangonsafayet">
+                                    <div class="buttons">
+                                        <img src="./assets/github.png"/>
+                                        <p>View Github profile</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <h3>Read more details</h2>
+                            <div class="row contact_links">
+                                <a href="https://drive.google.com/file/d/110nPXuhDFrXeeEedbW99GbjOFcNf8adh/view?usp=sharing">
+                                    <div class="buttons">
+                                        <img src="./assets/cv.png"/>
+                                        <p>View CV</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                
+                
 
-<div class="">
-    <h1>
-        Safayet
-    </h1>
-</div>
+            </div>
+        </div>
+    </div>
 
+
+
+    <script src="./js/particles.js"></script>
+    <script>
+        /* ---- particles.js config ---- */
+
+        particlesJS("particles-js", {
+        "particles": {
+            "number": {
+            "value": 20,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+            },
+            "color": {
+            "value": "#342E37"
+            },
+            "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+            },
+            "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+            },
+            "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+            },
+            "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+            },
+            "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+            },
+            "modes": {
+            "grab": {
+                "distance": 140,
+                "line_linked": {
+                "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+            }
+        },
+        "retina_detect": true
+        });
+    </script>
 </body>
 </html>
